@@ -1,16 +1,7 @@
-import { useSearchParams } from "next/navigation";
-
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Youtube, Twitter, Newspaper, PresentationIcon as PresentationChart, Send, MicroscopeIcon as MagnifyingGlassIcon } from "lucide-react";
-import { useEffect } from "react";
 
 export default function LandingPage() {
-   const searchParams = useSearchParams();
-   const logoUrl = searchParams.get("logoUrl");
-
    return (
       <div className="flex flex-col min-h-screen h-[100vh] text-white">
          <div className="absolute top-0 left-0 w-full h-full white p-3 pointer-events-none">
